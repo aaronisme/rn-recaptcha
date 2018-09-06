@@ -1,0 +1,29 @@
+{
+  "name": "rn-recaptcha",
+  "version": "0.0.1",
+  "description": "this is the react native component fore google recaptcha v2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronisme/rn-recaptcha.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "recaptcha"
+  ],
+  "author": "aaronisme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronisme/rn-recaptcha/issues"
+  },
+  "homepage": "https://github.com/aaronisme/rn-recaptcha#readme",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-native": "^0.56.0"
+  }
+}
