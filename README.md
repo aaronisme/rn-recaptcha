@@ -3,7 +3,7 @@ this is the React native component for Google Recaptch V2
 
 ## How to install
 ```js
- yarn rn-recaptcha
+ yarn add rn-recaptcha
  npm install rn-recaptcha
 ```
 ## How to use 
