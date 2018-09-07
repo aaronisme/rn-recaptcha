@@ -1,6 +1,6 @@
 {
   "name": "rn-recaptcha",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is the react native component fore google recaptcha v2",
   "main": "index.js",
   "scripts": {
