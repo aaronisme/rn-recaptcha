@@ -1,5 +1,5 @@
 import React from 'react';
-import { WebView } from 'react-native';
+import { WebView } from 'react-native-webview';
 import PropTypes from 'prop-types';
 
 // fix https://github.com/facebook/react-native/issues/10865
