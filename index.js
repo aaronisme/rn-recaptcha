@@ -11,7 +11,10 @@ const patchPostMessageJsCode = `(${String(function() {
   patchedPostMessage.toString = function() {
     return String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');
   };
-  window.postMessage = patchedPostMessage;
+//   window.postMessage = patchedPostMessage;
+  window.postMessage = function(patchedPostMessage) {
+    window.ReactNativeWebView.postMessage(patchedPostMessage);
+  }
 })})();`;
 
 const generateTheWebViewContent = siteKey => {
