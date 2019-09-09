@@ -1,5 +1,5 @@
 import React from 'react';
-import { WebView } from 'react-native';
+import { WebView } from 'react-native-webview';
 import PropTypes from 'prop-types';
 
 // fix https://github.com/facebook/react-native/issues/10865
@@ -11,7 +11,10 @@ const patchPostMessageJsCode = `(${String(function() {
   patchedPostMessage.toString = function() {
     return String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');
   };
-  window.postMessage = patchedPostMessage;
+//   window.postMessage = patchedPostMessage;
+  window.postMessage = function(patchedPostMessage) {
+    window.ReactNativeWebView.postMessage(patchedPostMessage);
+  }
 })})();`;
 
 const generateTheWebViewContent = siteKey => {
